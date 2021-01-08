@@ -23,7 +23,6 @@
         <spring.version>5.0.7.RELEASE</spring.version>
         <spring.boot.version>2.0.3.RELEASE</spring.boot.version>
 
-        <jackson.version>2.12.0</jackson.version>
         <yaml.version>1.27</yaml.version>
         <commons.io.version>2.8.0</commons.io.version>
         <commons.codec.version>1.15</commons.codec.version>
@@ -34,13 +33,13 @@
         <lombok.version>1.18.16</lombok.version>
         <jackson.version>2.12.0</jackson.version>
         <gson.version>2.8.6</gson.version>
+        <aspectj.version>1.9.6</aspectj.version>
 
         <servlet.api.version>4.0.1</servlet.api.version>
         <javax.validation.version>2.0.1.Final</javax.validation.version>
 
         <slf4j.version>1.7.29</slf4j.version>
-        <log4j.version>1.2.17</log4j.version>
-        <logging.log4j.version>2.12.1</logging.log4j.version>
+        <apache.log4j.version>2.12.1</apache.log4j.version>
 
         <junit.version>5.7.0</junit.version>
     </properties>
@@ -280,18 +279,6 @@
             </dependency>
 
             <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-core</artifactId>
-                <version>${jackson.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>${jackson.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>${gson.version}</version>
@@ -310,6 +297,12 @@
             </dependency>
 
             <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectj.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j.version}</version>
@@ -317,32 +310,22 @@
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-api</artifactId>
-                <version>${logging.log4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-core</artifactId>
-                <version>${logging.log4j.version}</version>
+                <version>${apache.log4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-slf4j-impl</artifactId>
-                <version>${logging.log4j.version}</version>
+                <version>${apache.log4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-web</artifactId>
-                <version>${logging.log4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>log4j</groupId>
-                <artifactId>log4j</artifactId>
-                <version>${log4j.version}</version>
+                <version>${apache.log4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
-                <version>${logging.log4j.version}</version>
+                <version>${apache.log4j.version}</version>
             </dependency>
 
             <dependency>
