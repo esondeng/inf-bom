@@ -43,6 +43,7 @@
         <mybatis.spring.version>2.0.6</mybatis.spring.version>
 
         <okhttp.version>4.9.0</okhttp.version>
+        <kotlin.version>1.4.20</kotlin.version>
 
         <servlet.api.version>4.0.1</servlet.api.version>
         <javax.validation.version>2.0.1.Final</javax.validation.version>
@@ -350,6 +351,19 @@
                 <artifactId>okhttp</artifactId>
                 <version>${okhttp.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-stdlib</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-stdlib-common</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+
 
             <dependency>
                 <groupId>org.slf4j</groupId>
