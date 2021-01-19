@@ -36,6 +36,7 @@
         <aspectj.version>1.9.6</aspectj.version>
         <javax.validation.version>2.0.1.Final</javax.validation.version>
         <hibernate.validator.version>6.2.0.Final</hibernate.validator.version>
+        <easyexcel.version>2.2.7</easyexcel.version>
 
         <mysql.connector.version>8.0.22</mysql.connector.version>
         <alibaba.druid.verison>1.2.4</alibaba.druid.verison>
@@ -304,6 +305,12 @@
                 <groupId>javax.validation</groupId>
                 <artifactId>validation-api</artifactId>
                 <version>${javax.validation.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>easyexcel</artifactId>
+                <version>${easyexcel.version}</version>
             </dependency>
 
             <dependency>
