@@ -47,7 +47,6 @@
         <kotlin.version>1.4.20</kotlin.version>
 
         <servlet.api.version>4.0.1</servlet.api.version>
-        <javax.validation.version>2.0.1.Final</javax.validation.version>
 
         <slf4j.version>1.7.29</slf4j.version>
         <apache.log4j.version>2.12.1</apache.log4j.version>
@@ -302,12 +301,6 @@
             </dependency>
 
             <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-                <version>${javax.validation.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>easyexcel</artifactId>
                 <version>${easyexcel.version}</version>
@@ -329,6 +322,12 @@
                 <groupId>org.hibernate.validator</groupId>
                 <artifactId>hibernate-validator</artifactId>
                 <version>${hibernate.validator.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.jboss.logging</groupId>
+                        <artifactId>jboss-logging</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
 
