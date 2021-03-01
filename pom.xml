@@ -444,7 +444,13 @@
                 <artifactId>curator-client</artifactId>
                 <version>${zk.curator.version}</version>
             </dependency>
-            
+
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>${zk.curator.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
